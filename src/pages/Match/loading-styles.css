@@ -1,0 +1,29 @@
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #F5F6EF;
+    overflow-x: hidden;
+}
+
+.loading-animation-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.loading-messages-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.1rem;
+    width: 700px;
+    font-size: 25px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    background-color: none;
+    color: #41787B;
+    text-align: center;
+}

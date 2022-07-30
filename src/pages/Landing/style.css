@@ -1,0 +1,288 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #F5F6EF;
+    overflow-x: hidden;
+}
+
+.video {
+    background-color: none;
+}
+
+
+/* Landing page section 1: Greeting animation */
+
+.landing-page-greeting-section {
+    margin-top: 120px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.landing-page-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 2vw;
+    padding-left: 6vw;
+}
+
+/* landing page greeting */
+
+.landing-page-greeting-animation-section {
+    margin: 150px 6vw 0px 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+
+.landing-page-greeting-text {
+    color: #41787B;
+    font-size: 65px;
+    text-align: left;
+}
+
+@keyframes scrollIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    15% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    85% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+.landing-page-animated-text-wrapper.animated {
+    animation: scrollIn 3s 1s ease-in-out infinite forwards;
+    text-align: left;
+}
+.landing-page-animated-text-wrapper.animated {
+    opacity: 0;
+    width: 400px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+.landing-page-greeting-text.red{
+    color: rgb(190, 81, 81);
+}
+.landing-page-greeting-text.yellow{
+    color: rgb(150, 150, 77);
+}
+.landing-page-greeting-text.green{
+    color: rgb(68, 119, 68);
+}
+.landing-page-greeting-text.purple{
+    color: rgb(118, 64, 118);
+}
+
+.landing-page-greeting-line-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+
+#pot-svg {
+    transform: scale(1.2) translateY(-75px);
+    height: 500px;
+}
+
+.landing-page-greeting-scroll-down-section {
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(7px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+#scroll-down-img {
+    width: 5%;
+    animation: float 3s ease-in-out 1s infinite forwards;
+}
+
+.three-steps-text {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+
+
+/* easy steps section */
+.landing-page-easy-steps-section {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.landing-page-easy-step {
+    position: relative;
+    width: 20%;
+    min-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.easy-step-img-wrapper {
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#enter-info-icon,
+#match-icon {
+    transform: scale(0.9);
+}
+#cook-icon {
+    transform: scale(1.7);
+}
+
+.easy-step-text.title {
+    margin-top: 40px;
+    font-size: 25px;
+}
+.easy-step-text {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* landing page gets started section */
+.landing-page-get-started-section {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#get-started-btn {
+    font-size: 30px;
+    width: 220px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #41787B;
+    border: 3px solid #41787B;
+    cursor: pointer;
+    color: #d3f9fa;
+}
+#get-started-btn:hover {
+    background-color: #4c8e91;
+}
+
+/* landing page footer */
+
+.landing-page-footer {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #449fa4;
+}
+
+
+/* landing page user info modal */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.landing-page-user-info-modal {
+    position: fixed;
+    opacity: 0;
+    width: 50vw;
+    height: 50vh;
+    top: 0px;
+    left: calc(50% - 25vw - 15px);
+    top: calc(50% - 30vh);
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 0px 1000px 1000px rgba(0, 0, 0, 0.303);
+    border-radius: 5px;
+    animation: fade-in 0.5s ease-in-out 0s forwards;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal-window-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#modal-pot-img {
+    transform: scale(0.5);
+}
+
+.modal-input {
+    width: 40vw;
+    height: 50px;
+    margin: 20px;
+    outline: none;
+    font-size: 30px;
+}
+
+#name-input {
+    margin-top: 3vh;
+}
+
+#match-btn {
+    width: auto;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: #449fa4;
+    border: 3px solid #41787B;
+    color: #d3f9fa;
+    border-radius: 3px;
+}
+
+#close-modal {
+    width: auto;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 2vh;
+    background-color: #d88191;
+    border: 3px solid #a63861;
+    color: #f9cfd7;
+    border-radius: 3px;
+}
+#close-modal:hover {
+    background-color: #ae6270;
+}
+
+#match-btn:hover {
+    background-color: #4c8e91;
+}
